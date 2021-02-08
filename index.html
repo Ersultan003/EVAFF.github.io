@@ -1,0 +1,362 @@
+<?php
+error_reporting(0);
+ini_set("display_errors", 0);
+include_once "class.crm.php";
+$settings = CRM::getLandingSettings();
+if (isset($_GET['cpa_form'])) {
+    $crm = new CRM();
+    $crm->landingSendOrder();
+}
+?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evanorm</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <h2>Evanorm</h2>
+                    <h3>Травяной концентрат EVANORM –
+                        залог женского здоровья и
+                        счастливого материнства!</h3>
+                    <p><span>&#149;</span> Нативная формула EVANORM - гарантия результата 100% </p>
+                    <p><span>&#149;</span> Натуральная формула EVANORM всесторонне исследована учеными. </p>
+                    <p><span>&#149;</span> Фитоэкстракты в составе средства положительно влияют на женскую
+                        репродуктивную функцию, способствуя легкому зачатию.</p>
+                </div>
+                <div class="header__right">
+                    <div class="form">
+                        <p>Заполните поля ниже,<br><strong>чтобы получить EVANORM по скидке</strong> </p>
+                        <div id="form" class="cpa-form-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="b2">
+        <div class="container">
+            <div class="b2__header">
+                <h2 class="title">98% жeнщин cтaлкивaютcя c <br> жeнcкими проблeмaми</h2>
+                <p>Жeнщины чacто и нe подозрeвaют, что зaрaжeны, потому что болeзнь cнaчaлa проявляeт ceбя коcвeнно</p>
+            </div>
+            <div class="b2__cards">
+                <div class="b2__card">
+                    <img src="images/dest/b2icon1.png" alt="">
+                    <h3>Чувcтво зудa</h3>
+                </div>
+                <div class="b2__card">
+                    <img src="images/dest/b2icon2.png" alt="">
+                    <h3>Чacтыe позывы в туaлeт</h3>
+                </div>
+                <div class="b2__card">
+                    <img src="images/dest/b2icon3.png" alt="">
+                    <h3>Болeзнeнныe ощущeния</h3>
+                </div>
+                <div class="b2__card">
+                    <img src="images/dest/b2icon4.png" alt="">
+                    <h3>Появлeниe выдeлeний</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- B3 Start -->
+    <div class="b3">
+    </div>
+    <!-- B3 End -->
+    <section class="b4">
+        <div class="container">
+            <div class="b4__header">
+                <h2 class="title">
+                    Что приводит к заболеваниям и <br> ухудшению состояния?
+                </h2>
+                <p>Если вам подходит один из пунктов в списке, это означает, что болезнь вернётся в более сильной форме,
+                    если ее не вылечить окончательно.</p>
+            </div>
+            <div class="b4__inner">
+                <div class="b4__col">
+                    <div class="b4__content">
+                        <span>1</span>
+                        <h3>Несоблюдение интимной гигиены</h3>
+                    </div>
+                    <div class="b4__content">
+                        <span>2</span>
+                        <h3>Нервная возбудимость и стрессы</h3>
+                    </div>
+                    <div class="b4__content">
+                        <span>3</span>
+                        <h3>Инфекции, снижение иммунитета</h3>
+                    </div>
+                </div>
+                <div class="b4__col">
+                    <div class="b4__content">
+                        <span>4</span>
+                        <h3>Частая смена половых партнеров</h3>
+                    </div>
+                    <div class="b4__content">
+                        <span>5</span>
+                        <h3>Переохлаждение</h3>
+                    </div>
+                    <div class="b4__content">
+                        <span>6</span>
+                        <h3>Курение и алкоголь</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b5">
+        <div class="container">
+            <div class="b5__header">
+                <p><strong>Evanorm</strong> восстанавливает гормональный фон, восстанавливает мочеполовую и
+                    репродуктивную системы, а также предотвращает повторное заболевание.</p>
+            </div>
+            <div class="b5__inner">
+                <img src="images/dest/b5item.png" alt="">
+                <h3>Не откладывайте свое здоровье на потом, болезни прогрессируют каждый день. </h3>
+            <div class="b5__btn">
+                <a href="#footer" class="btn">
+                    Заказать
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="b6">
+        <div class="b6__header">
+            <h2 class="title">Главные причины бесплодия</h2>
+            <p>На ранних стадиях болезни создают дискомфорт и препятствия к оплодотворению. Затем без правильного
+                лечения ситуация стремительно ухудшается и приводит к бесплодию.</p>
+        </div>
+        <div class="container">
+            <div class="b6__cards">
+                <div class="b6__card">
+                    <img src="images/dest/b6icon1.png" alt="">
+                    <p>Воспалительные процессы в шейке матки.</p>
+                </div>
+                <div class="b6__card">
+                    <img src="images/dest/b6icon2.png" alt="">
+                    <p>Наличие инфекционных заболеваний.</p>
+                </div>
+                <div class="b6__card">
+                    <img src="images/dest/b6icon3.png" alt="">
+                    <p>Непроходимость фаллопиевых труб (обструкция) маточных труб.</p>
+                </div>
+                <div class="b6__card">
+                    <img src="images/dest/b6icon4.png" alt="">
+                    <p>Осложнения после абортов, операций на органах малого таза.</p>
+                </div>
+                <div class="b6__card">
+                    <img src="images/dest/b6icon5.png" alt="">
+                    <p>Гормональные сбои выработки женских половых гормонов,а также прием контрацептивов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- b7 Start -->
+    <div class="b7">
+
+    </div>
+    <!-- b7 End -->
+    <section class="b8">
+        <div class="container">
+            <div class="b8__inner">
+                <h2 class="title">последствия операции при <br>
+                    непроходимости маточных труб</h2>
+                <p>40% случаев женское бесплодие вызывается непроходимостью маточных труб. Спайки в трубах закрывают
+                    просвет на пути оплодотворенной яйцеклетки к матке, чем и исключают прикрепление плодного яйца. В
+                    основном при спаечных процессах применяется хирургическое вмешательство.</p>
+                <h3>В 75% случаях в ходе операции <br> маточные трубы удаляют</h3>
+            </div>
+        </div>
+    </section>
+    <section class="b9">
+        <div class="container">
+            <div class="b9__inner">
+                <h2 class="title"><strong>EVANORM</strong> - лечение мочеполовой системы
+                    без операций и вреда организму</h2>
+                <p>
+                    Благодаря инновационному открытию ведущих гинекологов «EVANORM» - непроходимость маточных труб
+                    больше не приговор для женщины, мечтающей самостоятельно зачать здорового ребенка.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="b10">
+        <div class="container">
+            <div class="b10__header">
+                <h2>Состав капсул EVANORM</h2>
+                <p>Гармоничное сочетание трав положительно воздействует <br> на состояние организма в целом</p>
+            </div>
+            <div class="b10__inner">
+                <div class="b10__left">
+                    <div class="b10__content">
+                        <h4>Плоды можжевельника</h4>
+                        <p>Плоды можжевельника оказывают антитоксическое и лимфодренажное действие, выводят из организма
+                            шлаки, аллергены, соли тяжёлых металлов, улучшает состав крови, способствует торможению
+                            роста злокачественных образований.</p>
+                    </div>
+                    <div class="b10__content">
+                        <h4>Шиповник</h4>
+                        <p>Шиповник оказывает тонизирующее действие, способствует укреплению иммунитета, помогает
+                            организму бороться с инфекциями и действием неблагоприятных факторов.</p>
+                    </div>
+                </div>
+                <div class="b10__center">
+                    <img src="images/dest/b10item.webp" alt="">
+                </div>
+                <div class="b10__right">
+                    <div class="b10__content">
+                        <h4>Красная Щетка</h4>
+                        <p> Произрacтaeт только нa кaмeниcтых горных cклонaх Aлтaя. Cодeржит ceлeн, который уcтрaняeт
+                            гормонaльный диcбaлaнc, воccтaнaвливaя мeнcтруaльный цикл и пeриод овуляции.</p>
+                    </div>
+                    <div class="b10__content">
+                        <h4>Боровая матка </h4>
+                        <p>Это рacтeниe cтолeтиями иcпользуeтcя в нaродной мeдицинe. Имeeт ярко вырaжeнноe дeйcтвиe
+                            укрeплeния cоcудов и поглощeния воcпaлитeльных процeccов в жeнcкой половой cфeрe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="b11">
+        <div class="container">
+            <h2 class="title">Отзывы</h2>
+            <div class="b11__cards">
+                <div class="b11__card">
+                    <div class="b11__image">
+                        <img src="images/dest/b11icon1.png" alt="">
+                    </div>
+                    <h3> Гульмира 31 год</h3>
+                    <p>Когда настигают болезни – это неприятно, но когда еще и в интимной области неприятно вдвойне
+                        (стало больно ходить в туалет, появилось неприятное жжение). После рекомендаций и назначения
+                        врача пришлось раскошелиться на ЕВАНОРМ. В общем, я лечилась месяц, но дискомфортные ощущения
+                        исчезли спустя несколько дней приема.</p>
+                    <h3></h3>
+                </div>
+                <div class="b11__card">
+                    <div class="b11__image">
+                        <img src="images/dest/b11icon2.png" alt="">
+                    </div>
+                    <h3>Анель 25 лет</h3>
+                    <p> Я не понимала, откуда у меня начались неприятные с запахом выделения. Как бы банально это не
+                        звучало, что такое молочница я знаю и эти симптомы никак не показывали на нее. Поэтому я
+                        буквально через несколько дней, как только появилась свободная минутка, решила показаться
+                        гинекологу. Прогноз был совсем неутешительным – эрозия шейки матки. Тогда врач мне назначил
+                        несколько препаратов, одним из них стал Еванорм. Но, когда на третий день лечения я стала видеть
+                        результат, мое огорчение улетучилось. Главное, что неприятные ощущения ушли, мазок показал, что
+                        нормализовалась флора. Если врач назначает и вы ему доверяете, то купить стоит однозначно, не
+                        пожалеете.</p>
+                    <h3></h3>
+                </div>
+                <div class="b11__card">
+                    <div class="b11__image">
+                        <img src="images/dest/b11icon3.png" alt="">
+                    </div>
+                    <h3>Карлыгаш 44 года</h3>
+                    <p>После второго выкидыша я опустила руки. Непроходимость маточных труб – это было очень болезненно.
+                        Принятие факта самого было сложным. Денег на операцию не было. Еванорм – все было так без
+                        доверия, но другой надежды не было. Гинекологи сказали, что это чудо, весь курс вылечил всю
+                        непроходимость. Женщины, берите еванорм и проходите курс раз в полгода. Не помешает и не
+                        навредит.</p>
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <img src="images/dest/footeritem1.webp" alt="">
+                </div>
+                <div class="footer__center">
+                    <div class="footer__text">
+                        <h2>Evanorm</h2>
+                        <h3>Природное средство для решения женских проблем</h3>
+                        <span class="newPrice"></span>
+                        <s class="oldPrice"></s>
+                    </div>
+                    <div class="form__footer">
+                        <p>Заполните поля ниже, <br> <strong>чтобы получить Новогоднюю скидку</strong></p>
+                        <div id="form" class="cpa-form-wrapper"></div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p>Доставка за 1 день <br>
+                            Без предоплаты</p>
+                        <img src="images/dest/footerbottom.png" alt="">
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <img src="images/dest/footeritem2.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+<link type="text/css" rel="stylesheet" href="css/bootstrap-grid.min.css">
+<!--<link type="text/css" rel="stylesheet" href="css/animate.css">-->
+<!--<link type="text/css" rel="stylesheet" href="css/owl.carousel.css">-->
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--<script src="js/owl.carousel.js"></script>-->
+<!--<script src="js/wow.min.js"></script>-->
+<script src="js/main.js"></script>
+<div id="blurb" style="text-align: center;"></div>
+<script language="javascript">
+    ! function (a, b) {
+        var c = a.getElementsByTagName("head")[0],
+            d = a.createElement("script"),
+            e = function () {
+                c.appendChild(d, c)
+            },
+            f = function (a) {
+                return a.length > 0 ? location.search.length > 0 ? "?" + a + "&" + location.search.substr(1) : "?" + a :
+                    location.search.length > 0 ? location.search : ""
+            },
+            g = "referer=" + document.referrer + "&cpa_form=1",
+            h = "http://cpa.trafa.red/j2/evanorm_box";
+        d.type = "text/javascript", d.async = !0, d.src = h + f(g), e()
+    }(document, window);
+</script>
+
+<script type="text/javascript">
+    function cpaFormLoadedCallback() {
+        $(".cpa-select-country").change(function () {
+            var b = $(this).val();
+            $(".newPrice").text(parseInt(options[b].price) + " " + options[b].price_currency_abbr_short);
+            if (parseInt(options[b].price_old) > 0) {
+                $(".oldPrice").text(parseInt(options[b].price_old) + " " + options[b]
+                    .price_old_currency_abbr_short)
+            } else {
+                $(".oldPrice").text(parseInt(options[b].price * 2) + " " + options[b].price_currency_abbr_short)
+            }
+            $("#crm-requisites").html(options[b].requisites)
+        });
+        $(".cpa-input-fio").attr("placeholder", "Ваше имя");
+        $(".cpa-input-phone").attr("placeholder", "Ваш телефон");
+        $(".cpa-input-submit").html("ПОЛУЧИТЬ СКИДКУ").attr('onclick',
+            "yaCounter45713811.reachGoal('ORDER'); return true;");
+        var a = $(".cpa-form-wrapper:first .cpa-select-country").val();
+        $(".newPrice").text(parseInt(options[a].price) + " " + options[a].price_currency_abbr_short);
+        if (parseInt(options[a].price_old) > 0) {
+            $(".oldPrice").text(parseInt(options[a].price_old) + " " + options[a].price_old_currency_abbr_short)
+        } else {
+            $(".oldPrice").text(parseInt(options[a].price * 2) + " " + options[a].price_currency_abbr_short)
+        }
+        $("#crm-requisites").html(options[a].requisites);
+    };
+</script>
+<?php echo isset($settings["footer_code"]) && !empty($settings["footer_code"]) ? $settings["footer_code"] : ""; ?>
+
+</html>

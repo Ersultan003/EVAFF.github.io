@@ -1,0 +1,72 @@
+// main: ..//style.less
+
+
+.b8 {
+    padding: 90px 0;
+
+    .b8__inner {
+        width: 864px;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+
+            width: 745px;
+            font-size: 18px;
+            line-height: 105%;
+            opacity: 75%;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: "MuseoSansBlack";
+            font-size: 26px;
+            line-height: 31px;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+
+
+// Media 
+@media screen and (max-width:768px) {
+
+    .b8 {
+        .b8__inner {
+            width: 400px;
+
+            .title {
+              font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+              width: auto;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+
+    .b8 {
+        .b8__inner {
+            width: 300px;
+
+            .title {
+              font-size: 20px;
+              line-height: 24px;
+            }
+
+            p {
+                font-size: 14px;
+              width: auto;
+            }
+        }
+    }
+}
+

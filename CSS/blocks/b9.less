@@ -1,0 +1,62 @@
+// main: ..//style.less
+
+
+
+
+.b9 {
+    padding: 90px 0;
+    background: @blue-light;
+
+    .b9__inner {
+        width: 909px;
+        margin: 0 auto;
+        color: @white;
+        text-align: center;
+
+        .title {
+            color: @white;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 105%;
+            opacity: 75%;
+
+        }
+    }
+}
+
+
+//Media 
+
+@media screen and (max-width:768px) {
+    .b9 {
+        .b9__inner {
+            width: 400px;
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .b9 {
+        .b9__inner {
+            .title {
+                font-size: 20px;
+            }
+
+            width: 400px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:375px) {
+    .b9 {
+        .b9__inner {
+            width: 300px;
+        }
+    }
+
+}

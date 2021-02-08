@@ -1,0 +1,89 @@
+// compress: true
+@import "vars";
+@import "fonts.css";
+
+
+
+body {
+    margin: 0;
+    font-family: "MuseoSansMedium";
+    font-size: 1rem;
+    color: @black;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "MuseoSansBlack";
+    font-size: 32px;
+    line-height: 38px;
+    color: @blue-light;
+    margin-bottom: 20px;
+}
+
+.btn,
+.cpa-input-submit {
+    width: 220px;
+height: 40px;
+    text-decoration: none;
+   
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 44px;
+    background: @blue-light;
+    font-family: "MuseoSansBlack";
+    color: @white;
+    font-size: 16px;
+
+    text-transform: uppercase;
+}
+.btn{
+    padding: 15px 30px;
+}
+// Blocks
+@import "blocks/header.less";
+@import "blocks/b2.less";
+@import "blocks/b3.less";
+@import "blocks/b4.less";
+@import "blocks/b5.less";
+@import "blocks/b6.less";
+@import "blocks/b7.less";
+@import "blocks/b8.less";
+@import "blocks/b9.less";
+@import "blocks/b10.less";
+@import "blocks/b11.less";
+@import "blocks/footer.less";
+
+//Media 
+
+@media screen and (max-width:414px) {
+    .title {
+        font-size: 20px;
+    }
+}

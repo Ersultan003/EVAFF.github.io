@@ -1,0 +1,82 @@
+// main: ..//style.less
+
+
+
+
+.b6 {
+    padding: 90px 0;
+
+    .b6__header {
+        text-align: center;
+        background: url(.././images/dest/b6item.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 648px;
+        padding: 162px 0;
+        color: @white;
+
+        .title {
+            color: @white;
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 105%;
+            opacity: 75%;
+            width: 745px;
+            margin: 0 auto;
+        }
+    }
+
+    .b6__cards {
+        margin-top: 30px;
+        display: flex;
+
+        .b6__card {
+            width: 214px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+
+
+//Media 
+
+@media screen and(max-width:1024px) {
+    .b6 {
+        .b6__cards {
+            flex-direction: column;
+
+            .b6__card {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b6 {
+        .b6__header {
+            .title {
+                font-size: 22px;
+            }
+
+            p {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b6 {
+        padding: 30px 0;
+
+        .b6__header {
+            padding: 30px;
+        }
+    }
+}
